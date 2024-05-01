@@ -1,11 +1,10 @@
-/*.container{
-    width: 100%;
-    height: 100vh;
+
+.dImg{
     background-image: url(../../../../../assets/banner2.png);
     background-size: cover;
     background-position: center;
-    position: relative;
 }
-.card{
-    position: absolute;
-}*/
+button{
+    width: 100%;
+    background-color: #e50914;
+} 

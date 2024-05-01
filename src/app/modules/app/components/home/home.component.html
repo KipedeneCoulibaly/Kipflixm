@@ -1,27 +1,7 @@
-<div class="container-fluid">
-    <nav class="navbar navbar-expand-lg bg-transparent">
-      <div class="container-fluid">
-        <a class="navbar-brand" id="navtitle" routerLink="/home">{{title}}</a>
-        <div class="d-flex navlink" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navlinklang">
-                Langue
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Français</a></li>
-                <li><a class="dropdown-item" href="#">Anglais</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" id="navlink" routerLink="/login">S'identifier</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div></div>
-    <div class="banner">
+<div class="container-fluid d-flex justify-content-center min-vh-100 align-items-center position-relative bImg">
+    <app-navbar title="Kipflixm"></app-navbar>
+    <div class="container-fluid position-absolute bg-dark bg-opacity-50 min-vh-100 z1"></div>
+    <div class="banner text-center text-white position-absolute z-2">
       <div class="bannerInfo">
         <h1>Films et séries en illimité, et bien plus</h1>
         <h6>
@@ -29,7 +9,9 @@
           <br>
           Prêt à regarder Kipflixm ? Cliquez sur le bouton commencer.
         </h6>
-        <a href="#" id="navstart" routerLink="/login">Commencer ></a>
+        <h6 class="mt-3">
+          <a class="navstart p-2" id="navstart" routerLink="/login">Commencer ></a>
+        </h6>
       </div>
     </div>
   </div>

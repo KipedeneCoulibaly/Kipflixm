@@ -1,22 +1,20 @@
-<div class="container mt-5">
-    <div class="col-md-6 offset-md-3">
-        
-        <div class="alert alert-danger" *ngIf="errorMessage">{{errorMessage}}</div>
-        <div class="card">
-            <div class="card-header">Authentification</div>
+<div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 dImg">
+    <app-navbar title="Kipflixm"></app-navbar>
+        <div class="card bg-dark bg-opacity-75">
+            <div class="alert alert-danger" *ngIf="errorMessage">{{errorMessage}}</div>
+            <div class="card-header text-white text-center">
+                <h3>Authentification</h3>
+            </div>
             <div class="card-body">
                 <form [formGroup]="userFormGroup" (ngSubmit)="handleLogin()">
-                    <div class="me-3">
-                        <label class="form-label">Username</label>
-                        <input type="text" class="form-control" formControlName="username">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Username" formControlName="username">
                     </div>
-                    <div class="me-3">
-                        <label class="form-label">Password</label>
-                        <input type="password" class="form-control" formControlName="password">
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Password" formControlName="password">
                     </div>
-                    <button class="btn btn-primary mt-3">Login</button>
+                    <button class="btn me-3 mb-5">Login</button>
                 </form>
             </div>
         </div>
-    </div>
 </div>
